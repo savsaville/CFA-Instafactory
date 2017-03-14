@@ -21,8 +21,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @follow_status = current_user.follows?(@post.user) ? 'unfollow' : 'follow'
-    @like_status = current_user.likes?(@post) ? 'like' : 'unlike'
+    @follow_status = current_user.follows?(@post.user) ? 'Unfollow' : 'Follow'
+    @like_status = current_user.likes?(@post) ? 'Like' : 'Unlike'
   end
 
   # GET /posts/new
@@ -32,6 +32,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    @edit = 'edit'
   end
 
   # POST /posts

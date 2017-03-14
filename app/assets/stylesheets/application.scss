@@ -18,10 +18,26 @@
  $secondary-color: color("yellow", "base") !default;
 @import "materialize";
 
-.unfollow {
-  color: red;
+.Unfollow,
+.Unlike {
+  color: white;
+  border: solid 1px black;
+  background: red;
 }
 
-.follow {
-  color: green;
+.Follow,
+.Like,
+.Edit {
+  color: white;
+  border: solid 1px black;
+  background: green;
+}
+
+button {
+  height: 50px;
+  width: auto;
+}
+
+button:hover {
+  background: orange;
 }
